@@ -15,4 +15,5 @@ main(){
 Car v1=new Car();
 v1.setSpeed=7;
 v1.move();
+
 }
