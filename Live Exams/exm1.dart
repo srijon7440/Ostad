@@ -1,9 +1,9 @@
 import 'dart:math';
 void main() {
   List<Map<String, dynamic>>Marks=[
-    {'name':'Alice','scores': [85, 90, 78]},
-    {'name':'Bob','scores': [88, 76, 95]},
-    {'name':'Charlie','scores': [90, 92, 85]}
+    {'name':'Alice','scores':[85, 90, 78]},
+    {'name':'Bob','scores':[88, 76, 95]},
+    {'name':'Charlie','scores':[90, 92, 85]}
   ];
   Map<String, double> result={};
   for (var student in Marks) {
