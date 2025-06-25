@@ -1,20 +1,20 @@
 import 'dart:math';
 void main() {
-  List<Map<String, dynamic>> Marks = [
-    {'name': 'Alice', 'scores': [85, 90, 78]},
-    {'name': 'Bob', 'scores': [88, 76, 95]},
-    {'name': 'Charlie', 'scores': [90, 92, 85]}
+  List<Map<String, dynamic>>Marks=[
+    {'name':'Alice','scores': [85, 90, 78]},
+    {'name':'Bob','scores': [88, 76, 95]},
+    {'name':'Charlie','scores': [90, 92, 85]}
   ];
-  Map<String, double> result = {};
+  Map<String, double> result={};
   for (var student in Marks) {
-    List<int> scores = student['scores'];
+    List<int> sc = student['scores'];
     int sum = 0;
-    for (int i = 0; i < scores.length; i++) {
-      sum += scores[i];
+    for (int i = 0; i < sc.length; i++) {
+      sum += sc[i];
     }
-    double average = sum / scores.length;
-    average = double.parse(average.toStringAsFixed(2));
-    result[student['name']] = average;
+    double avg=sum/sc.length;
+    avg=double.parse(avg.toStringAsFixed(2));
+    result[student['name']] = avg;
   }
   print('{');
   result.forEach((key, value) {
