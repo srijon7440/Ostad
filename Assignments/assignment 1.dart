@@ -1,8 +1,8 @@
 abstract class Vehicle{
-  int _speed=0;
+  int? _speed;
  move();
 set setSpeed(int speed)=> _speed=speed;
-int get Speed=>_speed;
+int? get Speed=>_speed;
 }
 class Car extends Vehicle{
   move(){
