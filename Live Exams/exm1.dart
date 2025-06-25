@@ -9,7 +9,7 @@ void main() {
   for (var student in Marks) {
     List<int> sc = student['scores'];
     int sum = 0;
-    for (int i = 0; i < sc.length; i++) {
+    for (int i=0;i<sc.length;i++) {
       sum += sc[i];
     }
     double avg=sum/sc.length;
