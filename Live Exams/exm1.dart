@@ -1,4 +1,3 @@
-import 'dart:math';
 void main() {
   List<Map<String, dynamic>>Marks=[
     {'name':'Alice','scores':[85, 90, 78]},
